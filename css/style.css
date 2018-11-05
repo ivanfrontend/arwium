@@ -6,7 +6,7 @@
   font-style: normal; }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -405,6 +405,7 @@ figure {
   padding: 10px 7px 10px;
   background: #fff;
   left: 0;
+  width: 265px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
