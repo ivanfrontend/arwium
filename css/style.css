@@ -1386,3 +1386,18 @@ div.cs-select span {
   background: url(../images/hourglass.svg) center no-repeat #222222; }
 
 /*# sourceMappingURL=style.css.map */
+
+/*  Стили доработака */
+
+.myStyleIcon{
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #e2dfdf;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
+  -moz-box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
+  box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
+}
+
+/* Конец стилей по доработки */
