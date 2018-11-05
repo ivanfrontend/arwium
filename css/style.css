@@ -1399,18 +1399,10 @@ div.cs-select span {
   -moz-box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
   box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
 }
-<<<<<<< HEAD
 .slick-initialized .slick-slide{justify-content: center;}
 .slick-prev, .slick-next{top:30%;}
 /* Конец стилей по доработки */
-=======
 
-
-
-
-.bg_greey{
-  background: rgba(0, 0, 0, 0.04);
-}
+.bg_greey{ background: #393e46; color: #fff;}
 
 /* Конец стилей по доработкe */
->>>>>>> 245dbc4fca3ec3fda04d834f8b32bf199883db2b
