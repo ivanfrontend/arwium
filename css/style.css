@@ -716,7 +716,7 @@ div.cs-select span {
   margin-bottom: 3em; }
 #fh5co-about .fh5co-staff img {
   width: 230px;
-  height: 230px;
+  height: 150px;
   margin: 0 auto;
   margin-bottom: 20px;
   background: #fff;
@@ -726,10 +726,10 @@ div.cs-select span {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%; }
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  border-radius: 0%; }
 #fh5co-about .fh5co-staff h3 {
   font-size: 24px; }
 #fh5co-about .fh5co-staff p {
@@ -1399,5 +1399,6 @@ div.cs-select span {
   -moz-box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
   box-shadow: 0px 0px 37px -4px rgba(226,223,223,1);
 }
-
+.slick-initialized .slick-slide{justify-content: center;}
+.slick-prev, .slick-next{top:30%;}
 /* Конец стилей по доработки */
