@@ -218,3 +218,68 @@ jQuery(document).ready(function() {
 	  slidesToScroll: 4
 		});
 });
+
+// Калькулятор
+
+
+// Получение title
+jQuery(document).ready(function() {
+
+
+
+	jQuery('#from-place').on('input', function() {
+	let titleCompani = jQuery('#from-place').val();
+	if(titleCompani !== ''){
+		jQuery('#title_compani span').text(titleCompani);
+		jQuery('#title_compani').fadeIn(); // fadeIn - плавное появление;
+		}else{
+			jQuery('#title_compani').fadeOut(); // fadeOut - плавное исчезновение
+		}
+	});
+
+// Получение услуг
+	let sum = 0;
+	let count = 0;
+	jQuery('.checkbox').on('click', function() {
+		if (jQuery(this).is(':checked')){
+			count++;
+			jQuery('.raschet_rais').fadeIn(); // fadeIn - плавное появление;
+			sum = sum + parseInt(jQuery(this).data('role'));
+			jQuery('#itogSum span').text(sum);
+			let nameServes = jQuery(this).siblings('.label').text();
+			jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
+		}else {
+			count--;
+			if(count == 0){
+				jQuery('.raschet_rais').fadeOut(); // fadeOut - плавное исчезновение
+			}
+			sum = sum - parseInt(jQuery(this).data('role'));
+			jQuery('#itogSum span').text(sum);
+			jQuery('#nameServises li').remove();
+			$('.checkbox').each(function() {
+				if (jQuery(this).is(':checked')){
+					let nameServes = jQuery(this).siblings('.label').text();
+					jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
+		}
+	});
+		}
+	});
+
+	$('.search-property input').each(function() {
+		jQuery('.search-property input').on('input', function() {
+			if(jQuery('.search-property input[type="text"]').val() !== '' || jQuery('.search-property input').is(':checked')){
+				 jQuery('.wrap_curent_sum').fadeIn(); // fadeIn - плавное появление;
+			}else{
+				 jQuery('.wrap_curent_sum').fadeOut(); // fadeOut - плавное исчезновение
+			}
+		});
+
+	});
+
+
+	// $('.search-property input[type="checkbox"]').each(function() {
+	// });
+
+ });
+
+// Конец калькулятора
