@@ -1404,5 +1404,13 @@ div.cs-select span {
 /* Конец стилей по доработки */
 
 .bg_greey{ background: #393e46; color: #fff;}
+.wrap_top_header{background-color: #393e46;}
+
+.wrapp_info_top .contact_info_header_top{display: inline-block; font-size: 13px;margin: 0px 5px;}
+.wrapp_info_top .contact_info_header_top a{display: inline-block; font-size: 13px; color: #fff; outline: none;}
+.wrapp_info_top .contact_info_header_top a:hover{outline: none;}
+.wrapp_info_top .contact_info_header_top a:focus{outline: none; text-decoration: none;}
+.info_top_left{text-align: left;margin-left: 35px;}
+.info_top_righet{text-align: right; margin-right: 10px;}
 
 /* Конец стилей по доработкe */
