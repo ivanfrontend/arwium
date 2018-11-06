@@ -497,7 +497,7 @@ figure {
   width: 100%;
   float: left;
   margin-bottom: 20px; }
-#fh5co-search-map .s-holder label {
+#fh5co-search-map .s-holder .mylabel {
   width: 40%;
   float: left;
   color: #fff;
@@ -1412,5 +1412,91 @@ div.cs-select span {
 .wrapp_info_top .contact_info_header_top a:focus{outline: none; text-decoration: none;}
 .info_top_left{text-align: left;margin-left: 35px;}
 .info_top_righet{text-align: right; margin-right: 10px;}
+
+
+
+/* .myStyleLabel{width: 60%;} */
+
+/* Скрываем реальный чекбокс */
+.checkbox {
+	display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+	position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+	width: 20px;             /* Обязательно задаем ширину */
+	height: 20px;            /* Обязательно задаем высоту */
+	border: 2px solid #ccc;
+	border-radius: 3px;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+	content: "";             /* Добавляем наш псевдоэлемент */
+	display: block;			 /* Делаем его блочным элементом */
+	position: absolute;      /* Позиционируем его абсолютным образом */
+	/* Задаем расстояние от верхней, правой, нижней и левой границы */
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: #fff;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+	border-radius: 2px;
+}
+
+.myStyleLabel{ display: inline-block;}
+.wrap_label{display: inline-block; width: 60%;}
+
+.wrap_curent_sum{
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  position: relative;
+  color: #fff;
+  display: none;
+}
+.wrap_curent_sum .form_curent_sum{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid rgba(255,255,255, .4);
+  border-radius: 3px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title_curent_sum{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 7
+}
+
+#nameServises ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px;
+ }
+#nameServises ul li{width: 50%;}
+
+.title_curent_sum, #title_compani, #itogSum, #nameServises{width: 100%;}
+#itogSum{font-size: 20px;font-weight: 600;}
+#title_compani{ font-size: 20px; display: none;}
+
+.wrap_curent_sum .form_curent_sum #nameServises ul li{
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px;
+ }
+
+ .raschet_rais{display: none; padding-top: 7px;}
 
 /* Конец стилей по доработкe */
