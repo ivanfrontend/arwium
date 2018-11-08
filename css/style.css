@@ -170,7 +170,7 @@ figure {
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 1.3;
-  font-weight: 300; 
+  font-weight: 300;
   font-size: 30px;
   }
 
@@ -1457,7 +1457,7 @@ div.cs-select span {
 
 .wrap_curent_sum{
   height: 100%;
-  background: rgba(0,0,0,.8);
+  background-image: linear-gradient(150deg, rgb(57, 62, 70, .9), rgba(0,0,0,.9));
   position: relative;
   color: #fff;
   display: none;
@@ -1467,11 +1467,15 @@ div.cs-select span {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  border: 2px solid rgba(255,255,255, .4);
+  border: 2px solid #fff;
   border-radius: 3px;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  -moz-box-shadow: 0px 4px 13px -5px rgba(181, 174, 174);
+    -webkit-box-shadow: 0px 4px 13px -5px -5px rgba(181, 174, 174);
+    -moz-box-shadow: 0px 4px 13px -5px rgba(181, 174, 174);
+    box-shadow: 0px 4px 13px -5px rgb(181, 174, 174);
 }
 .title_curent_sum{
   text-align: center;
@@ -1490,7 +1494,14 @@ div.cs-select span {
 
 .title_curent_sum, #title_compani, #itogSum, #nameServises{width: 100%;}
 #itogSum{font-size: 20px;font-weight: 600;}
-#title_compani{ font-size: 20px; display: none;}
+#title_compani{
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  }
+  #title_compani span{font-size: 16px;font-weight: 100;}
 
 .wrap_curent_sum .form_curent_sum #nameServises ul li{
   color: #fff;

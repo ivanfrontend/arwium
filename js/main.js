@@ -276,10 +276,6 @@ jQuery(document).ready(function() {
 
 	});
 
-
-	// $('.search-property input[type="checkbox"]').each(function() {
-	// });
-
  });
 
 // Конец калькулятора
