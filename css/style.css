@@ -510,9 +510,9 @@ figure {
     font-size: 13px;
     margin-top: 13px; } }
 #fh5co-search-map .s-holder input[type="text"] {
-  padding: 24px 10px !important;
+  padding: 24px 10px ;
   font-weight: 700;
-  font-size: 12px; }
+  font-size: 13px; }
 #fh5co-search-map .s-holder input[type="text"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #44C662 !important; }
@@ -1515,7 +1515,54 @@ div.cs-select span {
 
 
  .label{
- 	font-size: 63%;
+ 	font-size: 83%;
  }
 
+
+
+ .wrap{
+   position: relative;
+    height: 50px;
+    width: 60% !important;
+    float: right;
+  }
+ .my_none{display: block !important;}
+ .wrap ul{
+   position: absolute;
+   width: 100%;
+   overflow: hidden;
+   height: 48px;
+   background: #fff;
+   padding: 0px;
+   }
+   .wrap ul li{list-style: none;cursor: pointer;}
+   .wrap ul li:first-child{
+     color: #44C662;
+     height: 48px;
+   }
+   .wrap ul li{
+     padding: 16px;
+     color: #333;
+     padding: 15px 10px;
+      color: #777;
+      font-weight: 600;
+font-size: 13px;
+   }
+   .wrap ul li:hover{background: rgba(0, 0, 0, 0.05);}
+   .open{
+     height: auto !important;
+     z-index: 10000;
+   }
+   .open ul{
+     transition: 1s;
+   }
+   .activSelect{background: rgba(0, 0, 0, 0.05);}
+   .ch2 ul li{ display: none;}
+   .ch2{display: none;}
+
+    .inputNamber{
+      padding: 7px !important;
+      outline: none;
+      display: none;
+    }
 /* Конец стилей по доработкe */

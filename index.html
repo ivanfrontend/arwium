@@ -219,33 +219,103 @@
 							</div>
 						</div>
 						<div class="col-xxs-12 col-xs-12">
-							<section id="mySele" >
+							<section>
+								<label class="mylabel" for="class">Форма собственности</label>
+								<div class="wrap">
+							    <ul>
+							      <li data-id="0" title="Выбрать">Выбрать</li>
+							      <li data-id="2" title="И.П">И.П</li>
+							      <li data-id="3" title="ЧУП">ЧУП</li>
+							      <li data-id="4" title="ООО">ООО</li>
+							      <li data-id="5" title="ЗАО">ЗАО</li>
+							      <li data-id="6" title="ОАО">ОАО</li>
+							      <li data-id="7" title="иностранные предприятия">Ин.Пр.</li>
+							    </ul>
+							  </div>
+
+							</section>
+							<section class="ch2">
 								<label class="mylabel" for="class">Услуги</label>
+							  <div class="wrap ch2">
+							    <ul>
+							      <li data-id="0" title="Выбрать">Выбрать</li>
+							      <li data-id="2" >И.П1</li>
+							      <li data-id="2" >И.П2</li>
+							      <li data-id="3" >ЧУП1</li>
+							      <li data-id="3" >ЧУП2</li>
+							      <li data-id="4" >ООО1</li>
+							      <li data-id="4" >ООО2</li>
+							      <li data-id="5" >ЗАО1</li>
+							      <li data-id="5" >ЗАО2</li>
+							      <li data-id="6" >ОАО1</li>
+							      <li data-id="6" >ОАО2</li>
+							      <li data-id="7" >Ин.Пр.1</li>
+							      <li data-id="7" >Ин.Пр.2</li>
+							    </ul>
+							  </div>
+
+							</section>
+							<section id="mySele1" >
+								<label class="mylabel" for="class">Критерии</label>
 									<div class="wrap_label">
-										<label class="myStyleLabel">
-											<span class="label">Название услуги 1</span>
-		                    <input class="checkbox" data-role="100" type="checkbox" name="checkbox-test">
-		                    <span class="checkbox-custom"></span>
-		                </label>
-										<label class="myStyleLabel">
-											<span class="label" >Название услуги 2</span>
-		                    <input class="checkbox" data-role="200" type="checkbox" name="checkbox-test">
-		                    <span class="checkbox-custom"></span>
-		                </label>
-										<label class="myStyleLabel">
-											<span class="label">Название услуги 3</span>
-		                    <input class="checkbox" data-role="300" type="checkbox" name="checkbox-test">
-		                    <span class="checkbox-custom"></span>
-		                </label>
-										<label class="myStyleLabel">
-											<span class="label">Название услуги 4</span>
-		                    <input class="checkbox" data-role="400" type="checkbox" name="checkbox-test">
-		                    <span class="checkbox-custom"></span>
-		                </label>
+										<div class="wrap_radio">
+											<label class="myStyleLabel">
+												<span class="label">Да</span>
+			                    <!-- <input class="checkbox" data-role="100" type="checkbox" name="checkbox-test"> -->
+													<input class="checkbox radioYes" data-role="100" name="dzen0" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<label class="myStyleLabel">
+												<span class="label">нет</span>
+			                    <input class="checkbox radioNo" data-role="100" name="dzen0" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<input class="inputNamber" type="text" placeholder="чесло">
+										</div>
 								</div>
 							</section>
+							<section id="mySele2" >
+								<label class="mylabel" for="class">Критерии</label>
+									<div class="wrap_label">
+										<div class="wrap_radio">
+											<label class="myStyleLabel">
+												<span class="label">Да</span>
+			                    <!-- <input class="checkbox" data-role="100" type="checkbox" name="checkbox-test"> -->
+													<input class="checkbox radioYes" data-role="100" name="dzen1" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<label class="myStyleLabel">
+												<span class="label">нет</span>
+			                    <input class="checkbox radioNo" data-role="100" name="dzen1" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<input class="inputNamber" type="text" placeholder="чесло">
+										</div>
+								</div>
+							</section>
+							<section id="mySele3" >
+								<label class="mylabel" for="class">Критерии</label>
+									<div class="wrap_label">
+										<div class="wrap_radio">
+											<label class="myStyleLabel">
+												<span class="label">Да</span>
+			                    <!-- <input class="checkbox" data-role="100" type="checkbox" name="checkbox-test"> -->
+													<input class="checkbox radioYes" data-role="100" name="dzen2" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<label class="myStyleLabel">
+												<span class="label">нет</span>
+			                    <input class="checkbox radioNo" data-role="100" name="dzen2" type="radio" value="dzen">
+			                    <span class="checkbox-custom"></span>
+			                </label>
+											<input class="inputNamber" type="text" placeholder="чесло">
+										</div>
+								</div>
+							</section>
+
+
 						</div>
-						<div class="col-xxs-12 col-xs-12">
+						<!-- <div class="col-xxs-12 col-xs-12">
 							<section>
 								<label class="mylabel" for="class">Форма собственности</label>
 								<select class="cs-select cs-skin-border">
@@ -257,9 +327,9 @@
 									<option value="5">ЧУП</option>
 								</select>
 							</section>
-						</div>
+						</div> -->
 
-						<div class="col-xxs-12 col-xs-12">
+						<!-- <div class="col-xxs-12 col-xs-12">
 							<section>
 								<label class="mylabel" for="class">Title:</label>
 								<div class="wide">
@@ -309,7 +379,7 @@
 									</select>
 								</div>
 							</section>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

@@ -274,8 +274,77 @@ jQuery(document).ready(function() {
 			}
 		});
 
+
 	});
 
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ function prostovSelect(args, args2) {
+   $(args2+ ' ul li:first-child').css({'display':'block'});
+   $(args+' ul li').on('click', function() {
+     $(this).parent().toggleClass('open');
+      if($(this).parent().hasClass('open') ){
+        $(this).text('Выбрать');
+        $(args2).removeClass('args2_none').fadeIn();
+      }else{
+        var text = $(this).text();
+        var data = $(this).data("id");
+        $( args2+' ul li:first-child').text('Выбрать');
+        $(this).siblings('li:first-child').text(text);
+        $( args2+' ul li:first-child').attr("data-id", data);
+        $(args+' ul li[data-id]').removeClass('my_none');
+        $(args+' ul li[data-id='+data+']').addClass('my_none');
+        $(this).siblings().removeClass('activSelect');
+        $(this).addClass('activSelect');
+
+      }
+   });
+	 $( args2+' ul li:first-child').on('click', function () {
+	 	$( args2+' ul li:first-child').addClass('opendefaultRadio');
+	});
+
+
+	$('.wrap_label input[type=radio]').on('click',function(event) {
+		if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
+ 			console.log('ok');
+			event.preventDefault();
+ 	 }else{
+		 if($(this).hasClass('radioYes')){
+			 console.log('yes');
+			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeIn();
+		 }else if($(this).hasClass('radioNo')){
+			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeOut();
+		 }
+
+	 }
+
+ });
+
+ }
+
+ prostovSelect('.wrap', '.ch2');
+
 
 // Конец калькулятора
