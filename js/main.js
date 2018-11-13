@@ -223,141 +223,168 @@ jQuery(document).ready(function() {
 
 
 // Получение title
-jQuery(document).ready(function() {
-
-
-
-	jQuery('#from-place').on('input', function() {
-	let titleCompani = jQuery('#from-place').val();
-	if(titleCompani !== ''){
-		jQuery('#title_compani span').text(titleCompani);
-		jQuery('#title_compani').fadeIn(); // fadeIn - плавное появление;
-		}else{
-			jQuery('#title_compani').fadeOut(); // fadeOut - плавное исчезновение
-		}
-	});
+// jQuery(document).ready(function() {
+//
+//
+//
+// 	jQuery('#from-place').on('input', function() {
+// 	let titleCompani = jQuery('#from-place').val();
+// 	if(titleCompani !== ''){
+// 		jQuery('#title_compani span').text(titleCompani);
+// 		jQuery('#title_compani').fadeIn(); // fadeIn - плавное появление;
+// 		}else{
+// 			jQuery('#title_compani').fadeOut(); // fadeOut - плавное исчезновение
+// 		}
+// 	});
 
 // Получение услуг
-	let sum = 0;
-	let count = 0;
-	jQuery('.checkbox').on('click', function() {
-		if (jQuery(this).is(':checked')){
-			count++;
-			jQuery('.raschet_rais').fadeIn(); // fadeIn - плавное появление;
-			sum = sum + parseInt(jQuery(this).data('role'));
-			jQuery('#itogSum span').text(sum);
-			let nameServes = jQuery(this).siblings('.label').text();
-			jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
-		}else {
-			count--;
-			if(count == 0){
-				jQuery('.raschet_rais').fadeOut(); // fadeOut - плавное исчезновение
-			}
-			sum = sum - parseInt(jQuery(this).data('role'));
-			jQuery('#itogSum span').text(sum);
-			jQuery('#nameServises li').remove();
-			$('.checkbox').each(function() {
-				if (jQuery(this).is(':checked')){
-					let nameServes = jQuery(this).siblings('.label').text();
-					jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
+// 	let sum = 0;
+// 	let count = 0;
+// 	jQuery('.checkbox').on('click', function() {
+// 		if (jQuery(this).is(':checked')){
+// 			count++;
+// 			jQuery('.raschet_rais').fadeIn(); // fadeIn - плавное появление;
+// 			sum = sum + parseInt(jQuery(this).data('role'));
+// 			jQuery('#itogSum span').text(sum);
+// 			let nameServes = jQuery(this).siblings('.label').text();
+// 			jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
+// 		}else {
+// 			count--;
+// 			if(count == 0){
+// 				jQuery('.raschet_rais').fadeOut(); // fadeOut - плавное исчезновение
+// 			}
+// 			sum = sum - parseInt(jQuery(this).data('role'));
+// 			jQuery('#itogSum span').text(sum);
+// 			jQuery('#nameServises li').remove();
+// 			$('.checkbox').each(function() {
+// 				if (jQuery(this).is(':checked')){
+// 					let nameServes = jQuery(this).siblings('.label').text();
+// 					jQuery('#nameServises ul').append('<li class="liDelit">'+nameServes+'</li>');
+// 		}
+// 	});
+// 		}
+// 	});
+//
+// 	$('.search-property input').each(function() {
+// 		jQuery('.search-property input').on('input', function() {
+// 			if(jQuery('.search-property input[type="text"]').val() !== '' || jQuery('.search-property input').is(':checked')){
+// 				 jQuery('.wrap_curent_sum').fadeIn(); // fadeIn - плавное появление;
+// 			}else{
+// 				 jQuery('.wrap_curent_sum').fadeOut(); // fadeOut - плавное исчезновение
+// 			}
+// 		});
+//
+//
+// 	});
+//
+//  });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//  function prostovSelect(args, args2) {
+//    $(args2+ ' ul li:first-child').css({'display':'block'});
+//    $(args+' ul li').on('click', function() {
+//      $(this).parent().toggleClass('open');
+//       if($(this).parent().hasClass('open') ){
+//         $(this).text('Выбрать');
+//         $(args2).removeClass('args2_none').fadeIn();
+//       }else{
+//         var text = $(this).text();
+//         var data = $(this).data("id");
+//         $( args2+' ul li:first-child').text('Выбрать');
+//         $(this).siblings('li:first-child').text(text);
+//         $( args2+' ul li:first-child').attr("data-id", data);
+//         $(args+' ul li[data-id]').removeClass('my_none');
+//         $(args+' ul li[data-id='+data+']').addClass('my_none');
+//         $(this).siblings().removeClass('activSelect');
+//         $(this).addClass('activSelect');
+//
+//       }
+//    });
+// 	 $( args2+' ul li:first-child').on('click', function () {
+// 	 	$( args2+' ul li:first-child').addClass('opendefaultRadio');
+// 	});
+//
+//
+// 	$('.wrap_label input[type=radio]').on('click',function(event) {
+// 		if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
+//  			console.log('ok');
+// 			event.preventDefault();
+//
+//  	 }else{
+// 		 if($(this).hasClass('radioYes')){
+// 			 console.log('yes');
+// 			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeIn();
+// 		 }else if($(this).hasClass('radioNo')){
+// 			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeOut();
+// 		 }
+//
+// 	 }
+//
+//
+//
+//  });
+//
+//
+//  $('.btn_raschet').on('click',function(event) {
+// 	 if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
+// 		 console.log('ok');
+// 		 event.preventDefault();
+//
+// 	}
+// });
+//
+//
+//  }
+//
+//  prostovSelect('.wrap', '.ch2');
+
+	jQuery('.wrap ul li').on('click', function() {
+		if(jQuery(this).parent().hasClass('open')){
+				jQuery(this).parent().toggleClass('open');
+				var text = jQuery(this).text();
+				var data = $(this).data("id");
+				console.log(data);
+				jQuery(this).siblings('li:first-child').text(text);
+				jQuery(this).siblings('li:first-child').attr("data-id", data);
+				$('.ch2 ul li[data-id]').removeClass('my_block');
+				$('.ch2 ul li[data-id='+data+']').addClass('my_block');
+				console.log('Закрыто');
+		// ЗАКРЫТО
+		}else{
+			jQuery('.wrap ul').removeClass('open');
+			jQuery(this).parent().toggleClass('open');
+			jQuery(this).parent().find('li:first-child').text('Выбрать');
+			jQuery(this).attr("data-id", '0');
+			console.log('открыто');
+		// ОТКРЫТО
 		}
 	});
-		}
-	});
-
-	$('.search-property input').each(function() {
-		jQuery('.search-property input').on('input', function() {
-			if(jQuery('.search-property input[type="text"]').val() !== '' || jQuery('.search-property input').is(':checked')){
-				 jQuery('.wrap_curent_sum').fadeIn(); // fadeIn - плавное появление;
-			}else{
-				 jQuery('.wrap_curent_sum').fadeOut(); // fadeOut - плавное исчезновение
-			}
-		});
-
-
-	});
-
- });
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- function prostovSelect(args, args2) {
-   $(args2+ ' ul li:first-child').css({'display':'block'});
-   $(args+' ul li').on('click', function() {
-     $(this).parent().toggleClass('open');
-      if($(this).parent().hasClass('open') ){
-        $(this).text('Выбрать');
-        $(args2).removeClass('args2_none').fadeIn();
-      }else{
-        var text = $(this).text();
-        var data = $(this).data("id");
-        $( args2+' ul li:first-child').text('Выбрать');
-        $(this).siblings('li:first-child').text(text);
-        $( args2+' ul li:first-child').attr("data-id", data);
-        $(args+' ul li[data-id]').removeClass('my_none');
-        $(args+' ul li[data-id='+data+']').addClass('my_none');
-        $(this).siblings().removeClass('activSelect');
-        $(this).addClass('activSelect');
-
-      }
-   });
-	 $( args2+' ul li:first-child').on('click', function () {
-	 	$( args2+' ul li:first-child').addClass('opendefaultRadio');
-	});
-
-
-	$('.wrap_label input[type=radio]').on('click',function(event) {
-		if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
- 			console.log('ok');
-			event.preventDefault();
-
- 	 }else{
-		 if($(this).hasClass('radioYes')){
-			 console.log('yes');
-			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeIn();
-		 }else if($(this).hasClass('radioNo')){
-			 $(this).parent('.myStyleLabel').siblings('.inputNamber').fadeOut();
-		 }
-
-	 }
-
-
-
- });
-
-
- $('.btn_raschet').on('click',function(event) {
-	 if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
-		 console.log('ok');
-		 event.preventDefault();
-
-	}
-});
-
-
- }
-
- prostovSelect('.wrap', '.ch2');
 
 
 // Конец калькулятора

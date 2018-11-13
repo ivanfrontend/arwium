@@ -1520,7 +1520,58 @@ div.cs-select span {
 
 
 
- .wrap{
+.wrap{
+  position: relative;
+   height: 50px;
+   width: 60% !important;
+   float: right;
+   transition: 3s;
+}
+.ch2 ul li:first-child{
+  display: block;
+}
+.ch2 ul li{
+  display: none;
+}
+.my_block{
+  display: block !important;
+}
+.wrap ul{
+  display: inline-block;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 48px;
+  background: #fff;
+  padding: 0px;
+  transition: 3s;
+}
+.wrap ul li{
+  list-style: none;
+  cursor: pointer;
+  padding: 16px;
+  color: #333;
+  padding: 15px 10px;
+  color: #777;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 3s;
+}
+.wrap ul li:hover{background: rgba(0, 0, 0, 0.05);transition: 3s;}
+.wrap ul li:first-child{
+  color: #44C662;
+  height: 48px;
+  transition: 3s;
+}
+.open{
+  height: auto !important;
+  z-index: 10000;
+  transition: 3s;
+}
+
+ /* .wrap{
    position: relative;
     height: 50px;
     width: 60% !important;
@@ -1546,7 +1597,7 @@ div.cs-select span {
      padding: 15px 10px;
       color: #777;
       font-weight: 600;
-font-size: 13px;
+      font-size: 13px;
    }
    .wrap ul li:hover{background: rgba(0, 0, 0, 0.05);}
    .open{
@@ -1585,6 +1636,6 @@ font-size: 13px;
     }
     .btn_raschet:focus{
       color: #fff;
-    }
+    } */
 
 /* Конец стилей по доработкe */
