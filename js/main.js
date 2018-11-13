@@ -363,12 +363,13 @@ jQuery(document).ready(function() {
 		if(jQuery(this).parent().hasClass('open')){
 				jQuery(this).parent().toggleClass('open');
 				var text = jQuery(this).text();
-				var data = $(this).data("id");
+				var data = jQuery(this).data("id");
 				console.log(data);
 				jQuery(this).siblings('li:first-child').text(text);
 				jQuery(this).siblings('li:first-child').attr("data-id", data);
-				$('.ch2 ul li[data-id]').removeClass('my_block');
-				$('.ch2 ul li[data-id='+data+']').addClass('my_block');
+				jQuery('.ch2 ul li[data-id]').removeClass('my_block');
+				jQuery('.ch2 ul li[data-id='+data+']').addClass('my_block');
+				jQuery('.click_wrap_section_servis').removeClass('wrap_section_servis');
 				console.log('Закрыто');
 		// ЗАКРЫТО
 		}else{
@@ -382,10 +383,23 @@ jQuery(document).ready(function() {
 	});
 
 
+	$('.only_number').on('input', function(e) {
+		event.preventDefault();
+		// if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
+		// 	return false;
+		// 	console.log('1');
+		// }else{
+		// 	return false;
+		// 	console.log('2');
+		// }
+	});
 
 	jQuery(".only_number").keypress(function(e) {
 if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
 return false;
+}
+if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
+	return false;
 }
 });
 
