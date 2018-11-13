@@ -1518,7 +1518,9 @@ div.cs-select span {
  	font-size: 83%;
  }
 
-
+.wrap_section_servis{
+  display: none;
+}
 
 .wrap{
   position: relative;
