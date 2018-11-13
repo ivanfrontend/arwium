@@ -20,7 +20,7 @@ body {
   overflow-x: hidden; }
 body.fh5co-offcanvas {
   overflow: hidden; }
-
+input {outline:none;}
 a {
   color: #44C662;
   -webkit-transition: 0.5s, ease;
@@ -1569,6 +1569,13 @@ div.cs-select span {
   height: auto !important;
   z-index: 10000;
   transition: 3s;
+}
+
+.only_number{
+  outline:none;
+}
+.only_number:focus{
+  outline:none;
 }
 
  /* .wrap{
