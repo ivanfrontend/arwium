@@ -1565,4 +1565,26 @@ font-size: 13px;
       outline: none;
       display: none;
     }
+
+    .wrap_btn_raschet{
+      text-align: center;
+    }
+    .btn_raschet{
+      padding: 7px 20px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      background: #393e46;
+      display: inline-block;
+      transition: .5s;
+    }
+    .btn_raschet:hover{
+      background-color: #393e46;
+      color:#fff;
+      transition: .5s;
+    }
+    .btn_raschet:focus{
+      color: #fff;
+    }
+
 /* Конец стилей по доработкe */

@@ -330,6 +330,7 @@ jQuery(document).ready(function() {
 		if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
  			console.log('ok');
 			event.preventDefault();
+
  	 }else{
 		 if($(this).hasClass('radioYes')){
 			 console.log('yes');
@@ -340,7 +341,19 @@ jQuery(document).ready(function() {
 
 	 }
 
+
+
  });
+
+
+ $('.btn_raschet').on('click',function(event) {
+	 if(!$( args2+' ul li:first-child').hasClass('opendefaultRadio')){
+		 console.log('ok');
+		 event.preventDefault();
+
+	}
+});
+
 
  }
 
