@@ -390,7 +390,22 @@ return false;
 });
 
 
+jQuery('.wrap_radio .myStyleLabel .radioYes').on('click', function() {	
+	jQuery(this).parents('.wrap_radio').find('.inputNamber').css({ "display": "block"});
+	console.log("grrgsg");
 
+});
+
+jQuery('.wrap_radio .myStyleLabel .radioNo').on('click', function() {	
+	jQuery(this).parents('.wrap_radio').find('.inputNamber').css({ "display": "none" });
+	console.log("grrgsg");
+
+});
+
+// jQuery('#myStyleLabel_no').on('click', function() {	
+// 	jQuery('.inputNamber').removeClass('open_myStyleLabel_yes');
+
+// });
 
 
 

@@ -526,7 +526,7 @@ figure {
   /* Firefox 18- */
   color: #44C662 !important; }
 #fh5co-search-map .s-holder input[type="text"], #fh5co-search-map .s-holder .cs-select {
-  width: 60% !important;
+  width: 60%;
   float: right;
   background: #fff !important;
   border: none;
@@ -1577,6 +1577,20 @@ div.cs-select span {
 .only_number:focus{
   outline:none;
 }
+
+
+.inputNamber{
+  display: none;
+  padding: 7px 10px !important;
+  width: 50% !important;
+}
+
+.open_myStyleLabel_yes{
+  display: block !important;
+}
+
+
+
 
  /* .wrap{
    position: relative;
