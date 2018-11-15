@@ -1602,6 +1602,7 @@ div.cs-select span {
   background: #393e46;
   display: inline-block;
   transition: .5s;
+  border: none;
 }
 .btn_raschet:hover{
   background-color: #393e46;
