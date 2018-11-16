@@ -359,44 +359,65 @@ jQuery(document).ready(function() {
 //
 //  prostovSelect('.wrap', '.ch2');
 
+
+	// jQuery('#from-place').on('input', function() {
+	// let titleCompani = jQuery('#from-place').val();
+	// if(titleCompani !== ''){
+	// 	jQuery('#title_compani span').text(titleCompani);
+	// 	jQuery('.wrap_curent_sum').fadeIn();
+	// 	jQuery('#title_compani').fadeIn(); // fadeIn - плавное появление;
+	// 	}else{
+	// 		jQuery('.wrap_curent_sum').fadeOut();
+	// 		jQuery('#title_compani').fadeOut(); // fadeOut - плавное исчезновение
+	// 	}
+	// });
+
+
+// Функция для открытия первых двух окон
+
 	jQuery('.wrap ul li').on('click', function() {
 		if(jQuery(this).parent().hasClass('open')){
 				jQuery(this).parent().toggleClass('open');
 				var text = jQuery(this).text();
 				var data = jQuery(this).data("id");
-				console.log(data);
 				jQuery(this).siblings('li:first-child').text(text);
 				jQuery(this).siblings('li:first-child').attr("data-id", data);
 				jQuery('.ch2 ul li[data-id]').removeClass('my_block');
 				jQuery('.ch2 ul li[data-id='+data+']').addClass('my_block');
-				jQuery('.click_wrap_section_servis').removeClass('wrap_section_servis');
 				console.log('Закрыто');
 		// ЗАКРЫТО
 		}else{
 			jQuery('.wrap ul').removeClass('open');
 			jQuery(this).parent().toggleClass('open');
 			jQuery(this).parent().find('li:first-child').text('Выбрать');
-			jQuery(this).attr("data-id", '0');
+			// jQuery(this).attr("data-id", '0');
 			console.log('открыто');
 		// ОТКРЫТО
 		}
 	});
 
+	// конец
 
-	// $('.checkbox').on('click', function(e) {
-	// 	event.preventDefault();
-	// });
+// Проверка на открытие раздела услуги
+jQuery('.ch1 ul li').on('click', function() {
+	if(jQuery(this).data("id") != '0'){
+		jQuery('.click_wrap_section_servis').removeClass('wrap_section_servis');
+}
+});
 
+	jQuery('.ch2 ul li').on('click', function() {
+		if(jQuery(this).data("id") != '0'){
+		jQuery(this).parents('.ch2').removeClass('my_delit_class');
+		$('.delit_disabled').removeAttr("disabled");
+	}
+	});
+	// Конец
 	jQuery(".only_number").keypress(function(e) {
 if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
 return false;
 }
-if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
-	return false;
-}
 });
-
-
+// код для да / нет
 jQuery('.wrap_radio .myStyleLabel .radioYes').on('click', function(event) {
 	if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
 		event.preventDefault();
@@ -404,9 +425,7 @@ jQuery('.wrap_radio .myStyleLabel .radioYes').on('click', function(event) {
 	}else {
 		jQuery(this).parents('.wrap_radio').find('.inputNamber').css({ "display": "block"});
 	}
-
 });
-
 jQuery('.wrap_radio .myStyleLabel .radioNo').on('click', function(event) {
 if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
 	event.preventDefault();
@@ -417,15 +436,21 @@ if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
 
 });
 
-jQuery('#from-place').on('input', function() {
+// Конец
 
-	jQuery('.wrap_curent_sum').css({'display' : 'block'});
-	var inp_company_name = jQuery('#from-place').val();
-	jQuery('#title_compani').css({'display' : 'block'});
-	jQuery('#title_compani span').text(inp_company_name);  
-	// console.log('sfxdgfgnhgfghmfgm');
 
-});
+
+
+// jQuery('#from-place').on('input', function() {
+//
+// 	jQuery('.wrap_curent_sum').css({'display' : 'block'});
+// 	var inp_company_name = jQuery('#from-place').val();
+// 	jQuery('#title_compani').css({'display' : 'block'});
+// 	jQuery('#title_compani span').text(inp_company_name);
+//
+// });
+
+
 
 
 jQuery('.btn_raschet').on('click', function() {
@@ -433,7 +458,7 @@ jQuery('.btn_raschet').on('click', function() {
 	var inp = jQuery('#from-place').val();
 	var inp_ownership_val = jQuery('.ch1 ul li:first-child').text();
 	var inp_setvice_val = jQuery('.ch2 ul li:first-child').text();
-	
+
 
 
 	console.log(inp_setvice_val);
