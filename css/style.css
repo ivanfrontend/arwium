@@ -29,7 +29,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #44C662; }
-
+input:disabled{cursor: 	default;}
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 16px;
@@ -708,7 +708,7 @@ div.cs-select span {
   padding: 10px;
   background: rgba(0, 0, 0, 0.7); }
 .property .list-details li {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   list-style: none;
   display: inline-block;
@@ -1611,6 +1611,23 @@ div.cs-select span {
 }
 .btn_raschet:focus{
   color: #fff;
+}
+
+
+.fh5co-blog{
+  height: 573px;
+}
+
+.prais{
+  font-size: 24px;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #44C662;
+}
+.fh5co-lead span{
+  color:#44C662;
+  font-weight: 600;
 }
 
 
