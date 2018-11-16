@@ -417,15 +417,23 @@ if(jQuery('.click_wrap_section_servis').hasClass('wrap_section_servis')){
 
 });
 
-jQuery('#from-place').on('input', function() {
+// jQuery('#from-place').on('input', function() {
 
-	jQuery('.wrap_curent_sum').css({'display' : 'block'});
-	var inp_company_name = jQuery('#from-place').val();
-	jQuery('#title_compani').css({'display' : 'block'});
-	jQuery('#title_compani span').text(inp_company_name);  
-	// console.log('sfxdgfgnhgfghmfgm');
+// 	if(jQuery('#from-place').val() !== ''){
 
-});
+// 		jQuery('.wrap_curent_sum').css({'display' : 'block'});
+// 		var inp_company_name = jQuery('#from-place').val();
+// 		jQuery('#title_compani').css({'display' : 'block'});
+// 		jQuery('#title_compani span').text(inp_company_name);  
+// 		// console.log('sfxdgfgnhgfghmfgm');
+// 	}else {
+// 		jQuery('.wrap_curent_sum').fadeOut();
+// 	 }
+
+
+	
+
+// });
 
 
 jQuery('.btn_raschet').on('click', function() {
@@ -439,21 +447,6 @@ jQuery('.btn_raschet').on('click', function() {
 	console.log(inp_setvice_val);
 
 });
-
-
-// jQuery(document).ready(function() {
-//
-//
-//
-// 	jQuery('#from-place').on('input', function() {
-// 	let titleCompani = jQuery('#from-place').val();
-// 	if(titleCompani !== ''){
-// 		jQuery('#title_compani span').text(titleCompani);
-// 		jQuery('#title_compani').fadeIn(); // fadeIn - плавное появление;
-// 		}else{
-// 			jQuery('#title_compani').fadeOut(); // fadeOut - плавное исчезновение
-// 		}
-// 	});
 
 
 // Конец калькулятора

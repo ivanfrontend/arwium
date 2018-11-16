@@ -1681,4 +1681,26 @@ div.cs-select span {
       color: #fff;
     } */
 
+
+.adout_title div{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #44C662;
+    font-weight: 500;
+}
+
+.adout_title p{
+  margin-top: 20px;
+  
+}
+
+.about_desc{
+  height: 373px;
+}
+
+.adout_title img{
+  width: 100%;
+}
+
 /* Конец стилей по доработкe */
