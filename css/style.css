@@ -1743,5 +1743,93 @@ div.cs-select span {
 
 }
 
+.wrap_img_produkt img{
+  width: 100%;
+}
+
+.wrap_popular_produkts .title_popular_produkts{
+  background-color: #44C662;
+  text-align: left;
+  padding: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 1px solid #44C662;
+}
+.wrap_popular_produkts .title_popular_produkts .span_icon{
+  padding: 15px;
+  font-size: 24px;
+  background-color: #398a4c;
+}
+
+.wrap_popular_produkts .title_popular_produkts .span_title_popular_produkts{
+  position: absolute;
+  top: 12px;
+  left: 70px;
+}
+.wrap_popular_produkts ul{
+  list-style: none;
+  background-color: #fff;
+  padding: 0px;
+}
+
+.wrap_popular_produkts ul li{
+  padding:10px;
+  transition: .5s;
+}
+.wrap_popular_produkts ul li:hover{
+  background-color: #44C662;
+  transition: .5s;
+}
+.wrap_popular_produkts ul li:hover a{
+  color: #fff;
+  transition: .5s;
+}
+.wrap_popular_produkts ul li a{
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: .5s;
+}
+.wrap_popular_produkts ul li a span{
+  width: 70%;
+}
+.wrap_popular_produkts ul li a img{
+  width: 30%;
+  height: 100%;
+}
+
+.wrpa_content{
+  margin-top: 40px;
+}
+
+.wrpa_content p{
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+.wrpa_content ul li, .wrpa_content div, .wrpa_content span{
+  color: #333;
+}
+
+.wrap_bread_crumds ul{
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+}
+.wrap_bread_crumds ul li{
+  display: inline-block;
+}
+.wrap_bread_crumds ul li a{
+  color:#44C662;
+}
+.wrap_bread_crumds ul li span{ padding-right: 5px;}
+.wrap_bread_crumds ul li:last-child span{display: none;}
+.wrap_bread_crumds ul li:last-child a{color:rgba(0,0,0,.5);cursor: default;}
+
+
 
 /* Конец стилей по доработкe */
