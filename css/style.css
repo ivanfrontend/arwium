@@ -1524,7 +1524,7 @@ div.cs-select span {
 
 .wrap{
   position: relative;
-   height: 50px;
+    height: 50px;  /* Раскоментить */
    width: 60% !important;
    float: right;
    transition: 3s;
@@ -1533,7 +1533,7 @@ div.cs-select span {
   display: block;
 }
 .ch2 ul li{
-  display: none;
+  display: block;
 }
 .my_block{
   display: block !important;
@@ -1541,10 +1541,10 @@ div.cs-select span {
 .wrap ul{
   display: inline-block;
   padding: 0px;
-  position: absolute;
+   position: absolute;  /* Раскоментить */
   width: 100%;
-  overflow: hidden;
-  height: 48px;
+   overflow: hidden;  /* Раскоментить */
+   height: 48px;  /* Раскоментить */
   background: #fff;
   padding: 0px;
   transition: 3s;
@@ -1709,7 +1709,7 @@ div.cs-select span {
 
 .adout_title p{
   margin-top: 20px;
-  
+
 }
 
 .about_desc{
@@ -1719,5 +1719,29 @@ div.cs-select span {
 .adout_title img{
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+.fora-sob .title_fs{
+  background-color: #fff;
+  list-style: none;
+  cursor: pointer;
+  padding: 16px;
+  color: #333;
+  padding: 15px 10px;
+  color: #777;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 3s;
+
+}
+
 
 /* Конец стилей по доработкe */
