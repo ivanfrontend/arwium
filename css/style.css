@@ -599,7 +599,7 @@ div.cs-select span {
 
 #fh5co-blog-section, #fh5co-features, #fh5co-popular-properties, #fh5co-properties, #fh5co-testimonial, #fh5co-about, #fh5co-contact, .fh5co-content-section {
   clear: both;
-  padding: 7em 0; }
+  padding: 4em 0; }
 @media screen and (max-width: 768px) {
   #fh5co-blog-section, #fh5co-features, #fh5co-popular-properties, #fh5co-properties, #fh5co-testimonial, #fh5co-about, #fh5co-contact, .fh5co-content-section {
     padding: 4em 0; } }
@@ -609,7 +609,7 @@ div.cs-select span {
 
 .heading-section {
   padding-bottom: 1em;
-  margin-bottom: 4em; }
+  margin-bottom: 1em; }
 .heading-section h3 {
   font-size: 40px;
   font-weight: 400;
@@ -1805,6 +1805,7 @@ div.cs-select span {
 
 .wrpa_content{
   margin-top: 40px;
+  padding: 0px 15px;
 }
 
 .wrpa_content p{
@@ -1816,6 +1817,10 @@ div.cs-select span {
   color: #333;
 }
 
+.wrap_bread_crumds{
+    background: rgba(0, 0, 0, 0.04);
+}
+
 .wrap_bread_crumds ul{
   padding: 5px 0px 5px 0px;
   margin: 0px;
@@ -1824,12 +1829,30 @@ div.cs-select span {
   display: inline-block;
 }
 .wrap_bread_crumds ul li a{
-  color:#44C662;
+  color: #44C662;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-bottom: 1px solid;
 }
 .wrap_bread_crumds ul li span{ padding-right: 5px;}
 .wrap_bread_crumds ul li:last-child span{display: none;}
 .wrap_bread_crumds ul li:last-child a{color:rgba(0,0,0,.5);cursor: default;}
 
+.my-style-wrap-content{
+  background-color: #fff;
+  padding: 0;
+}
 
+.none-margin{
+  margin: 0px;
+}
+.colorFFF{
+  color: #fff;
+}
+
+.my_hover_none a:hover{
+  color: #fff
+}
 
 /* Конец стилей по доработкe */
