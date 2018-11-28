@@ -118,14 +118,14 @@ function input_jobs(ths, mass) {
     if(ths == i.id){
       if(i.personal !== '' && i.personal !== undefined){
         console.log(typeof(i.personal));
-        $('.input-jobs').append('<label class="mylabel mylabelDelInput" for="from">Кол-во сотрудников:</label>');
-        $('.input-jobs').append('<input type="text" class="form-control  only_number mylabelDelInput" id="from-place" placeholder="Укажите число"/>');
+        $('.input-jobs').append('<label class="mylabel mylabelDelInput margin_top20" for="from">Кол-во сотрудников:</label>');
+        $('.input-jobs').append('<input type="text" class="form-control  only_number mylabelDelInput margin_top20" id="from-place" placeholder="Укажите число"/>');
       }
       if(i.blankLine !== '' && i.blankLine !== undefined){
-        $('.blank_line').append('<label class="mylabel mylabelDelInput" for="class">Бланки строгой отчётности: </label>');
-        $('.blank_line').append('<div class="wrap_label mylabelDelInput"><div class="wrap_radio blank_line_yes_no"></div></div>');
-        $('.blank_line_yes_no').append('<label class="myStyleLabel"><span class="label">Да'+i.blankLine+'</span><input  class="checkbox radioYes delit_disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
-        $('.blank_line_yes_no').append('<label class="myStyleLabel"><span class="label">Нет'+i.blankLine+'</span><input class="checkbox radioNo delit_disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
+        $('.blank_line').append('<label class="mylabel mylabelDelInput margin_top20" for="class">Бланки строгой отчётности: </label>');
+        $('.blank_line').append('<div class="wrap_label mylabelDelInput margin_top20"><div class="wrap_radio blank_line_yes_no"></div></div>');
+        $('.blank_line_yes_no').append('<label class="myStyleLabel margin_top20"><span class="label">Да'+i.blankLine+'</span><input  class="checkbox radioYes delit_disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
+        $('.blank_line_yes_no').append('<label class="myStyleLabel margin_top20"><span class="label">Нет'+i.blankLine+'</span><input class="checkbox radioNo delit_disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
       }
     }
   });
@@ -149,20 +149,20 @@ function funIP(clickOpen, mass) {
   $('.mylabelDelInput').remove();
 
   // Создание списка налогообложения
-  $('.click_wrap_section_servis').append('<label class="mylabel mylabelDel" for="class">Услуги</label>');
-  $('.click_wrap_section_servis').append('<div class="wrap click-chaild ch2 my_delit_class"><ul></ul></div>');
+  $('.click_wrap_section_servis').append('<label class="mylabel mylabelDel margin_top20" for="class">Услуги</label>');
+  $('.click_wrap_section_servis').append('<div class="wrap margin_top20 click-chaild ch2 my_delit_class"><ul></ul></div>');
   // Конец
 
   // Создаём input для Кол-во сотрудников с свойством disabled="disabled"
-  $('.input-jobs').append('<label class="mylabel mylabelDelInput" for="from">Кол-во сотрудников:</label>');
-  $('.input-jobs').append('<input type="text" class="form-control only_number mylabelDelInput" disabled="disabled" id="from-place" placeholder="Укажите число"/>');
+  $('.input-jobs').append('<label class="mylabel mylabelDelInput margin_top20" for="from">Кол-во сотрудников:</label>');
+  $('.input-jobs').append('<input type="text" class="margin_top20 form-control only_number mylabelDelInput" disabled="disabled" id="from-place" placeholder="Укажите число"/>');
   // Конец
 
   // создаём бланки строкой отчётности
-  $('.blank_line').append('<label class="mylabel mylabelDelInput" for="class">Бланки строгой отчётности: </label>');
-  $('.blank_line').append('<div class="wrap_label mylabelDelInput"><div class="wrap_radio blank_line_yes_no"></div></div>');
-  $('.blank_line_yes_no').append('<label class="myStyleLabel"><span class="label">Да</span><input  class="checkbox radioYes delit_disabled" disabled="disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
-  $('.blank_line_yes_no').append('<label class="myStyleLabel"><span class="label">Нет</span><input class="checkbox radioNo delit_disabled" disabled="disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
+  $('.blank_line').append('<label class="mylabel mylabelDelInput margin_top20" for="class">Бланки строгой отчётности: </label>');
+  $('.blank_line').append('<div class="wrap_label mylabelDelInput margin_top20"><div class="wrap_radio blank_line_yes_no"></div></div>');
+  $('.blank_line_yes_no').append('<label class="myStyleLabel margin_top20"><span class="label">Да</span><input  class="checkbox radioYes delit_disabled" disabled="disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
+  $('.blank_line_yes_no').append('<label class="myStyleLabel margin_top20"><span class="label">Нет</span><input class="checkbox radioNo delit_disabled" disabled="disabled" data-role="100" name="dzen0" type="radio" value="dzen"><span class="checkbox-custom"></span></label>');
   // Конец
 
 

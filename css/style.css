@@ -499,7 +499,8 @@ figure {
 #fh5co-search-map .s-holder .input-field, #fh5co-search-map .s-holder section {
   width: 100%;
   float: left;
-  margin-bottom: 20px; }
+  /* margin-bottom: 20px; */
+ }
 #fh5co-search-map .s-holder .mylabel {
   width: 40%;
   float: left;
@@ -1857,6 +1858,9 @@ div.cs-select span {
 
 .my_hover_none a:hover{
   color: #fff
+}
+.margin_top20{
+  margin-top: 20px
 }
 
 /* Конец стилей по доработкe */
