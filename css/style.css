@@ -1797,6 +1797,7 @@ div.cs-select span {
 }
 .wrap_popular_produkts ul li a span{
   width: 70%;
+  font-size: 15px;
 }
 .wrap_popular_produkts ul li a img{
   width: 30%;
@@ -1810,8 +1811,11 @@ div.cs-select span {
 
 .wrpa_content p{
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
+}
+.wrpa_content ul{
+  font-size: 14px;
 }
 .wrpa_content ul li, .wrpa_content div, .wrpa_content span{
   color: #333;
